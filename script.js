@@ -71,10 +71,11 @@ if (numbersStack && numbersSticky && stackCards.length && !reduceMotion.matches)
     window.innerWidth <= 1100 &&
     window.innerHeight >= 900;
   const isFourKStack = () => window.innerWidth >= 1800;
+  const isControlledStack = () => isTabletStack() || isFourKStack();
 
   const setStackHeight = () => {
     const stickyHeight = numbersSticky.getBoundingClientRect().height || window.innerHeight;
-    if (isTabletStack()) {
+    if (isControlledStack()) {
       numbersStack.style.height = `${stickyHeight}px`;
       return;
     }
@@ -85,9 +86,8 @@ if (numbersStack && numbersSticky && stackCards.length && !reduceMotion.matches)
   const updateNumbersStack = () => {
     const sectionRect = numbersStack.getBoundingClientRect();
     const viewportHeight = numbersSticky.getBoundingClientRect().height || window.innerHeight;
-    const scrollBaseHeight = isFourKStack() ? window.innerHeight : viewportHeight;
-    const scrollDistance = Math.max(1, numbersStack.offsetHeight - scrollBaseHeight);
-    const progress = isTabletStack()
+    const scrollDistance = Math.max(1, numbersStack.offsetHeight - viewportHeight);
+    const progress = isControlledStack()
       ? tabletProgress
       : clamp(-sectionRect.top / scrollDistance);
     const cardStyles = getComputedStyle(numbersStack);
@@ -133,7 +133,7 @@ if (numbersStack && numbersSticky && stackCards.length && !reduceMotion.matches)
   };
 
   const updateTabletProgress = (delta) => {
-    if (!isTabletStack()) return false;
+    if (!isControlledStack()) return false;
     const nextProgress = clamp(tabletProgress + delta / 1900);
     if (nextProgress === tabletProgress) return false;
     tabletProgress = nextProgress;
