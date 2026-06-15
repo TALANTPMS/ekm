@@ -70,6 +70,7 @@ if (numbersStack && numbersSticky && stackCards.length && !reduceMotion.matches)
     window.innerWidth >= 700 &&
     window.innerWidth <= 1100 &&
     window.innerHeight >= 900;
+  const isFourKStack = () => window.innerWidth >= 1800;
 
   const setStackHeight = () => {
     const stickyHeight = numbersSticky.getBoundingClientRect().height || window.innerHeight;
@@ -84,7 +85,8 @@ if (numbersStack && numbersSticky && stackCards.length && !reduceMotion.matches)
   const updateNumbersStack = () => {
     const sectionRect = numbersStack.getBoundingClientRect();
     const viewportHeight = numbersSticky.getBoundingClientRect().height || window.innerHeight;
-    const scrollDistance = Math.max(1, numbersStack.offsetHeight - viewportHeight);
+    const scrollBaseHeight = isFourKStack() ? window.innerHeight : viewportHeight;
+    const scrollDistance = Math.max(1, numbersStack.offsetHeight - scrollBaseHeight);
     const progress = isTabletStack()
       ? tabletProgress
       : clamp(-sectionRect.top / scrollDistance);
