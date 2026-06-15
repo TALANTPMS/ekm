@@ -1482,8 +1482,8 @@ main {
     top: auto;
     bottom: 0;
     left: 5%;
-    width: auto;
-    height: 100%;
+    width: min(38vw, 520px);
+    height: auto;
   }
   .numbers-stack__cards {
     top: 166px;
@@ -1526,8 +1526,8 @@ main {
     top: auto;
     bottom: 0;
     left: 8%;
-    width: auto;
-    height: 100%;
+    width: min(36vw, 480px);
+    height: auto;
   }
   .numbers-stack__cards {
     top: 185px;
@@ -1558,8 +1558,8 @@ main {
     top: auto;
     bottom: 0;
     left: 5%;
-    width: auto;
-    height: 100%;
+    width: min(30vw, 380px);
+    height: auto;
   }
   .numbers-stack__cards { top: 136px; }
   .numbers-stack__footer {
@@ -1595,8 +1595,8 @@ main {
     top: auto;
     bottom: 0;
     left: 2%;
-    width: auto;
-    height: 100%;
+    width: min(34vw, 320px);
+    height: auto;
     z-index: 4;
   }
   .numbers-stack__cards {
@@ -1625,8 +1625,8 @@ main {
     top: auto;
     bottom: 0;
     left: 2%;
-    width: auto;
-    height: 100%;
+    width: min(30vw, 260px);
+    height: auto;
     z-index: 4;
     opacity: .95;
   }
@@ -1700,8 +1700,8 @@ main {
     top: auto;
     bottom: 0;
     left: 2%;
-    width: auto;
-    height: 100%;
+    width: min(32vw, 300px);
+    height: auto;
     z-index: 4;
   }
   .numbers-stack__cards {
@@ -1728,8 +1728,8 @@ main {
   .numbers-stack__man {
     bottom: 0;
     left: 2%;
-    width: auto;
-    height: 100%;
+    width: min(32vw, 310px);
+    height: auto;
     z-index: 4;
   }
   .numbers-stack__copy {
@@ -1752,8 +1752,8 @@ main {
   .numbers-stack__man {
     bottom: 0;
     left: 2%;
-    width: auto;
-    height: 100%;
+    width: min(30vw, 280px);
+    height: auto;
     z-index: 4;
   }
   .numbers-stack__cards {
@@ -1770,8 +1770,8 @@ main {
   .numbers-stack__man {
     bottom: 0;
     left: 1%;
-    width: auto;
-    height: 100%;
+    width: min(28vw, 260px);
+    height: auto;
     z-index: 4;
   }
   .numbers-stack__footer {
@@ -1782,8 +1782,8 @@ main {
 @media (min-width: 781px) and (max-width: 820px) and (min-height: 1100px) {
   .numbers-stack__man {
     bottom: 0;
-    width: auto;
-    height: 100%;
+    width: min(30vw, 270px);
+    height: auto;
     z-index: 4;
   }
 }
