@@ -1191,10 +1191,10 @@ main {
 .numbers-stack__man {
   position: absolute;
   z-index: 9;
-  top: 145px;
-  bottom: auto;
+  top: auto;
+  bottom: 0;
   left: 4%;
-  width: min(54vw, 760px);
+  width: min(40vw, 440px);
   height: auto;
   pointer-events: none;
   filter: drop-shadow(18px 24px 30px rgba(20,0,2,.28));
@@ -1482,7 +1482,7 @@ main {
     top: auto;
     bottom: 0;
     left: 5%;
-    width: min(44vw, 680px);
+    width: min(34vw, 480px);
     height: auto;
   }
   .numbers-stack__cards {
@@ -1525,8 +1525,8 @@ main {
   .numbers-stack__man {
     top: auto;
     bottom: 0;
-    left: 8%;
-    width: min(42vw, 620px);
+    left: 6%;
+    width: min(38vw, 540px);
     height: auto;
   }
   .numbers-stack__cards {
@@ -1557,8 +1557,8 @@ main {
   .numbers-stack__man {
     top: auto;
     bottom: 0;
-    left: 5%;
-    width: min(40vw, 560px);
+    left: 4%;
+    width: min(28vw, 380px);
     height: auto;
   }
   .numbers-stack__cards { top: 136px; }
@@ -1595,7 +1595,7 @@ main {
     top: auto;
     bottom: 0;
     left: 2%;
-    width: min(42vw, 440px);
+    width: min(38vw, 400px);
     height: auto;
     z-index: 4;
   }
