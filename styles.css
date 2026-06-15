@@ -1587,10 +1587,10 @@ main {
     --stack-header-height: 68px;
   }
   .numbers-stack__man {
-    top: 115px;
-    bottom: auto;
-    left: 1%;
-    width: min(66vw, 650px);
+    top: auto;
+    bottom: 0;
+    left: 2%;
+    width: min(42vw, 420px);
   }
   .numbers-stack__cards {
     top: 170px;
@@ -1615,10 +1615,10 @@ main {
   .numbers-stack__heading { top: 32px; }
   .numbers-stack__heading h2 { font-size: clamp(32px, 6vw, 47px); }
   .numbers-stack__man {
-    top: 165px;
-    bottom: auto;
-    left: -10%;
-    width: 62vw;
+    top: auto;
+    bottom: 0;
+    left: 2%;
+    width: min(44vw, 360px);
     opacity: .95;
   }
   .numbers-stack__cards {
@@ -1689,8 +1689,9 @@ main {
   }
   .numbers-stack__man {
     top: auto;
-    bottom: 238px;
-    left: 1%;
+    bottom: 0;
+    left: 2%;
+    width: min(38vw, 320px);
   }
   .numbers-stack__cards {
     top: 145px;
@@ -1714,9 +1715,9 @@ main {
 
 @media (min-width: 821px) and (max-width: 1100px) and (min-height: 1100px) {
   .numbers-stack__man {
-    bottom: 252px;
+    bottom: 0;
     left: 2%;
-    width: min(74vw, 690px);
+    width: min(38vw, 340px);
   }
   .numbers-stack__copy {
     position: relative;
@@ -1736,9 +1737,9 @@ main {
     top: 22px;
   }
   .numbers-stack__man {
-    bottom: 238px;
-    left: -1%;
-    width: 68vw;
+    bottom: 0;
+    left: 2%;
+    width: min(40vw, 300px);
   }
   .numbers-stack__cards {
     top: 132px;
@@ -1752,9 +1753,9 @@ main {
 
 @media (min-width: 700px) and (max-width: 780px) and (min-height: 900px) and (max-height: 1100px) {
   .numbers-stack__man {
-    bottom: 222px;
-    left: -2%;
-    width: 74vw;
+    bottom: 0;
+    left: 1%;
+    width: min(38vw, 280px);
   }
   .numbers-stack__footer {
     bottom: 64px;
@@ -1763,7 +1764,8 @@ main {
 
 @media (min-width: 781px) and (max-width: 820px) and (min-height: 1100px) {
   .numbers-stack__man {
-    bottom: 212px;
+    bottom: 0;
+    width: min(38vw, 300px);
   }
 }
 
@@ -1802,12 +1804,7 @@ main {
     font-size: 16px;
   }
   .numbers-stack__man {
-    top: auto;
-    bottom: 0;
-    left: -4%;
-    width: 64vw;
-    max-width: 340px;
-    opacity: 1;
+    display: none;
   }
   .numbers-stack__cards {
     z-index: 9;
@@ -1895,11 +1892,6 @@ main {
     right: 15px;
     bottom: clamp(14px, calc(33.6svh - 204px), 110px);
     left: 15px;
-  }
-  .numbers-stack__man {
-    left: -6%;
-    width: 58vw;
-    max-width: 220px;
   }
   .numbers-stack__copy {
     margin-inline: 6px;
