@@ -1936,7 +1936,7 @@ main {
     top: auto;
     bottom: 0;
     left: 2%;
-    width: min(40vw, 460px);
+    width: min(36vw, 330px);
   }
   .numbers-stack__cards { top: 126px; }
   .numbers-stack__footer {
