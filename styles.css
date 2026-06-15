@@ -1802,7 +1802,12 @@ main {
     font-size: 16px;
   }
   .numbers-stack__man {
-    display: none;
+    top: auto;
+    bottom: 0;
+    left: -4%;
+    width: 64vw;
+    max-width: 340px;
+    opacity: 1;
   }
   .numbers-stack__cards {
     z-index: 9;
@@ -1890,6 +1895,11 @@ main {
     right: 15px;
     bottom: clamp(14px, calc(33.6svh - 204px), 110px);
     left: 15px;
+  }
+  .numbers-stack__man {
+    left: -6%;
+    width: 58vw;
+    max-width: 220px;
   }
   .numbers-stack__copy {
     margin-inline: 6px;
