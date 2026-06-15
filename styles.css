@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
   overflow-x: clip;
   overscroll-behavior-x: none;
 }
@@ -25,6 +26,7 @@ body {
   color: var(--ink);
   background: #fff;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
   overflow-x: clip;
   overscroll-behavior-x: none;
   touch-action: pan-y pinch-zoom;
@@ -78,7 +80,6 @@ main {
   transform: translate3d(0, var(--hero-parallax-y, 0px), 0) scale(1.04);
   transform-origin: center top;
   will-change: transform;
-  pointer-events: none;
 }
 
 .hero__fade {
@@ -1355,23 +1356,14 @@ main {
 
 .numbers-stack__arrow {
   display: none;
-  position: absolute;
 }
 
 .numbers-stack__arrow-line {
-  fill: none;
-  stroke: rgba(255, 255, 255, .5);
-  stroke-width: 1.8;
   stroke-dasharray: 3 6;
-  stroke-linecap: round;
 }
 
 .numbers-stack__arrow-head {
-  fill: none;
-  stroke: rgba(255, 255, 255, .5);
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  stroke-dasharray: none;
 }
 
 @keyframes numbers-phone-sway {
@@ -1552,7 +1544,7 @@ main {
     --stack-card-height: 280px;
     --stack-header-height: 64px;
   }
-  .numbers-stack__heading { top: 24px; }
+  .numbers-stack__heading { top: 46px; }
   .numbers-stack__heading h2 { font-size: 40px; }
   .numbers-stack__heading > span {
     min-height: 34px;
@@ -1560,13 +1552,13 @@ main {
     font-size: 18px;
   }
   .numbers-stack__man {
-    top: 112px;
+    top: 132px;
     left: 5%;
-    width: min(51vw, 680px);
+    width: min(49vw, 650px);
   }
-  .numbers-stack__cards { top: 118px; }
+  .numbers-stack__cards { top: 136px; }
   .numbers-stack__footer {
-    bottom: 16px;
+    bottom: 38px;
     min-height: 118px;
     padding-block: 10px;
   }
@@ -1582,7 +1574,6 @@ main {
     height: 147px;
   }
   .numbers-stack__arrow {
-    display: block;
     top: 20px;
     left: 101px;
     width: 96px;
@@ -1663,7 +1654,6 @@ main {
     border-radius: 9px;
   }
   .numbers-stack__arrow {
-    display: block;
     top: 21px;
     left: 84px;
     width: 96px;
@@ -1876,28 +1866,6 @@ main {
 }
 
 @media (max-width: 380px) {
-  .offer h1 > span { white-space: normal; }
-  .offer__bottom {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-  .present {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-height: 0;
-  }
-  .present__art {
-    flex: 0 0 auto;
-    height: 80px;
-    transform: scale(1);
-    transform-origin: left center;
-  }
-  .present__art img { top: -10px; left: 4px; width: 120px; height: 90px; }
-  .present__circle--large { width: 68px; height: 68px; top: 4px; left: 0; }
-  .present__circle--small { width: 36px; height: 36px; right: 0; bottom: 0; }
-  .present p { margin: 0; font-size: 11px; }
-  .present p strong { font-size: 13px; }
   .numbers-stack {
     --stack-card-width: calc(100vw - 30px);
     --stack-card-height: 250px;
