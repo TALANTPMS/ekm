@@ -1933,9 +1933,10 @@ main {
     font-size: 18px;
   }
   .numbers-stack__man {
-    top: 126px;
-    left: -8%;
-    width: min(58vw, 540px);
+    top: auto;
+    bottom: 0;
+    left: 2%;
+    width: min(40vw, 460px);
   }
   .numbers-stack__cards { top: 126px; }
   .numbers-stack__footer {
