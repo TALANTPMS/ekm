@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Спасибо за интерес к франшизе ЕКМ">
+  <title>Спасибо — ЕКМ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="thank-you.css">
+</head>
+<body>
+  <main class="thanks">
+    <div class="thanks__background" aria-hidden="true"></div>
+    <div class="thanks__glow" aria-hidden="true"></div>
+
+    <header class="thanks__header">
+      <a class="thanks__brand" href="index.html" aria-label="Вернуться на сайт ЕКМ">
+        <img src="assets/figma-logo.jpg" alt="">
+        <span>
+          <strong>ЕКМ</strong>
+          <small>Франшиза комиссионного магазина</small>
+        </span>
+      </a>
+    </header>
+
+    <section class="thanks__content" aria-labelledby="thanks-title">
+      <div class="thanks__card">
+        <span class="thanks__dash" aria-hidden="true"></span>
+        <div class="thanks__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <path d="m17 33 10 10 21-23"/>
+          </svg>
+        </div>
+        <h1 id="thanks-title">Спасибо<span data-thanks-name></span>!</h1>
+        <p>Спасибо за проявленный интерес к нашей франшизе.</p>
+        <p>Очень скоро наши менеджеры свяжутся с вами.</p>
+        <a class="thanks__button" href="index.html">Вернуться на сайт</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="thank-you.js"></script>
+</body>
+</html>

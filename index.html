@@ -48,9 +48,9 @@
           </div>
 
           <div class="offer__bottom">
-            <form class="lead-form" data-form>
+            <form class="lead-form" data-form data-form-name="Первый экран — презентация франшизы">
               <label><span>Ваше имя</span><input name="name" type="text" placeholder="Имя" required></label>
-              <label><span>Телефон</span><input name="phone" type="tel" placeholder="Телефон" required></label>
+              <label><span>Телефон</span><input name="phone" type="tel" placeholder="+7 (___) ___-__-__" inputmode="numeric" autocomplete="tel" maxlength="18" required></label>
               <button class="button" type="submit">Получить</button>
               <p class="form-status" aria-live="polite"></p>
             </form>
@@ -115,9 +115,9 @@
         <h2><em>Получите</em> подробную финансовую модель франшизы ЕКМ</h2>
         <div class="contact__panel">
           <img src="assets/store-strip.png" alt="Ассортимент магазина ЕКМ">
-          <form class="lead-form lead-form--wide" data-form>
+          <form class="lead-form lead-form--wide" data-form data-form-name="Финансовая модель франшизы">
             <label><span>Ваше имя</span><input name="name" type="text" placeholder="Ваше имя" required></label>
-            <label><span>Телефон</span><input name="phone" type="tel" placeholder="Телефон" required></label>
+            <label><span>Телефон</span><input name="phone" type="tel" placeholder="+7 (___) ___-__-__" inputmode="numeric" autocomplete="tel" maxlength="18" required></label>
             <button class="button" type="submit">Получить</button>
             <p class="form-status" aria-live="polite"></p>
           </form>
@@ -188,9 +188,9 @@
               Скачайте финансовую модель франшизы
             </p>
 
-            <form class="numbers-stack__form" data-form>
+            <form class="numbers-stack__form" data-form data-form-name="Бизнес-модель ЕКМ в цифрах">
               <label><span>Ваше имя</span><input name="name" type="text" placeholder="Ваше имя" required></label>
-              <label><span>Телефон</span><input name="phone" type="tel" placeholder="Телефон" required></label>
+              <label><span>Телефон</span><input name="phone" type="tel" placeholder="+7 (___) ___-__-__" inputmode="numeric" autocomplete="tel" maxlength="18" required></label>
               <button class="button" type="submit">Скачать</button>
               <p class="form-status" aria-live="polite"></p>
             </form>
@@ -218,11 +218,13 @@
         </div>
       </div>
       <div class="legacy-about__carousel" aria-hidden="true">
-        <div class="legacy-about__track">
+        <div class="legacy-about__track legacy-about__track--first">
           <img class="legacy-about__object legacy-about__object--tv" src="assets/immersive-tv.webp" alt="">
           <img class="legacy-about__object legacy-about__object--coffee" src="assets/immersive-coffee.webp" alt="">
           <img class="legacy-about__object legacy-about__object--drill" src="assets/immersive-drill.webp" alt="">
           <img class="legacy-about__object legacy-about__object--console" src="assets/immersive-console.webp" alt="">
+        </div>
+        <div class="legacy-about__track legacy-about__track--second">
           <img class="legacy-about__object legacy-about__object--tv" src="assets/immersive-tv.webp" alt="">
           <img class="legacy-about__object legacy-about__object--coffee" src="assets/immersive-coffee.webp" alt="">
           <img class="legacy-about__object legacy-about__object--drill" src="assets/immersive-drill.webp" alt="">
@@ -231,7 +233,342 @@
       </div>
     </section>
 
+    <section class="partnership" id="partnership" aria-labelledby="partnership-title">
+      <div class="partnership__glow partnership__glow--one" aria-hidden="true"></div>
+      <div class="partnership__glow partnership__glow--two" aria-hidden="true"></div>
+      <div class="partnership__content container">
+        <div class="partnership__heading">
+          <h2 id="partnership-title">Узнайте условия<br>партнёрства прямо сейчас</h2>
+          <p>Размер паушального взноса и роялти зависит от величины города, где вы откроете свой магазин.</p>
+        </div>
+
+        <div class="partnership__viewport" aria-label="Пакеты партнерства">
+          <div class="partnership__cards">
+            <article class="partnership-card" data-package="Малый город">
+              <span class="partnership-card__index">01</span>
+              <div>
+                <p class="partnership-card__eyebrow">Размер города</p>
+                <h3>Малый</h3>
+                <strong>до 500 000 жителей</strong>
+              </div>
+              <p>Получите подробное описание пакета и финансовую модель, рассчитанную под ваш город.</p>
+              <button class="button partnership-card__button" type="button" data-open-partnership>Получить</button>
+            </article>
+
+            <article class="partnership-card partnership-card--featured" data-package="Средний город">
+              <span class="partnership-card__index">02</span>
+              <div>
+                <p class="partnership-card__eyebrow">Размер города</p>
+                <h3>Средний</h3>
+                <strong>до 1 000 000 жителей</strong>
+              </div>
+              <p>Получите подробное описание пакета и финансовую модель, рассчитанную под ваш город.</p>
+              <button class="button partnership-card__button" type="button" data-open-partnership>Получить</button>
+            </article>
+
+            <article class="partnership-card" data-package="Крупный город">
+              <span class="partnership-card__index">03</span>
+              <div>
+                <p class="partnership-card__eyebrow">Размер города</p>
+                <h3>Крупный</h3>
+                <strong>от 1 000 000 жителей</strong>
+              </div>
+              <p>Получите подробное описание пакета и финансовую модель, рассчитанную под ваш город.</p>
+              <button class="button partnership-card__button" type="button" data-open-partnership>Получить</button>
+            </article>
+          </div>
+        </div>
+        <p class="partnership__swipe-hint">Листайте карточки влево и вправо</p>
+      </div>
+    </section>
+
+    <section class="store-gallery" id="store-gallery" aria-labelledby="store-gallery-title">
+      <div class="store-gallery__sticky">
+        <div class="store-gallery__heading container">
+          <h2 id="store-gallery-title">Таким будет ваш магазин <em>ЕКМ</em></h2>
+          <div class="store-gallery__status" aria-live="polite">
+            <span data-gallery-current>01</span>
+            <i></i>
+            <span>05</span>
+          </div>
+        </div>
+
+        <div class="store-gallery__viewport">
+          <div class="store-gallery__track">
+            <figure class="store-gallery__slide is-active" data-gallery-slide>
+              <img src="assets/store-gallery-01.jpg" alt="Консультация покупателя в магазине ЕКМ">
+              <figcaption><span>01</span>Живое общение с покупателями</figcaption>
+            </figure>
+            <figure class="store-gallery__slide" data-gallery-slide>
+              <img src="assets/store-gallery-02.jpg" alt="Торговый зал комиссионного магазина ЕКМ">
+              <figcaption><span>02</span>Полноценный торговый зал</figcaption>
+            </figure>
+            <figure class="store-gallery__slide" data-gallery-slide>
+              <img src="assets/store-gallery-03.jpg" alt="Выдача товара покупателю в магазине ЕКМ">
+              <figcaption><span>03</span>Техника на любой запрос</figcaption>
+            </figure>
+            <figure class="store-gallery__slide" data-gallery-slide>
+              <img src="assets/store-gallery-04.jpg" alt="Отдел электроинструмента в магазине ЕКМ">
+              <figcaption><span>04</span>Большой выбор инструмента</figcaption>
+            </figure>
+            <figure class="store-gallery__slide" data-gallery-slide>
+              <img src="assets/store-gallery-05.jpg" alt="Витрины и ассортимент магазина ЕКМ">
+              <figcaption><span>05</span>Готовый магазин ЕКМ</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="store-gallery__progress" aria-hidden="true">
+          <span data-gallery-progress></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="opening-roadmap" id="opening-roadmap" aria-labelledby="opening-roadmap-title">
+      <div class="opening-roadmap__dots opening-roadmap__dots--left" aria-hidden="true"></div>
+      <div class="opening-roadmap__dots opening-roadmap__dots--right" aria-hidden="true"></div>
+
+      <div class="opening-roadmap__content container">
+        <div class="opening-roadmap__heading reveal">
+          <h2 id="opening-roadmap-title">Как мы будем открывать<br>ваш магазин</h2>
+          <p>Пошагово проведём от подписания договора до первых покупателей</p>
+        </div>
+
+        <ol class="opening-roadmap__list">
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>01</span>
+              <p>Заключение договора франшизы</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>02</span>
+              <p>Выбор помещения: 30–150 м², первый этаж, отдельный вход</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>03</span>
+              <p>Согласование расстановки торгового оборудования</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>04</span>
+              <p>Ремонт и оформление точки в фирменном стиле ЕКМ</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>05</span>
+              <p>Оснащение оборудованием и формирование товарного запаса</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>06</span>
+              <p>Подключение 1С «Комиссионер» и настройка учёта</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>07</span>
+              <p>Поиск и обучение персонала: 2–3 дня дистанционно</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>08</span>
+              <p>Запуск Авито и регистрация на Яндекс Картах и 2ГИС</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>09</span>
+              <p>Маркетинговый запуск и привлечение первых клиентов</p>
+            </article>
+          </li>
+          <li class="opening-roadmap__item reveal">
+            <article class="opening-roadmap__card">
+              <span>10</span>
+              <p>Торжественное открытие магазина</p>
+            </article>
+          </li>
+        </ol>
+
+        <div class="opening-roadmap__footer reveal" data-package="Пример договора франшизы">
+          <p><strong>Работаем строго по договору,</strong> в котором описаны наши обязанности и все условия сотрудничества.</p>
+          <button class="button opening-roadmap__button" type="button" data-open-partnership>
+            Скачать пример договора
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="final-cta" aria-labelledby="final-cta-title">
+      <div class="final-cta__background" aria-hidden="true"></div>
+      <div class="final-cta__glow" aria-hidden="true"></div>
+
+      <div class="final-cta__content container">
+        <div class="final-cta__panel reveal">
+          <span class="final-cta__accent" aria-hidden="true"></span>
+          <h2 id="final-cta-title">
+            Откройте прибыльный комиссионный магазин
+            <strong>с франшизой «ЕКМ»</strong>
+          </h2>
+          <p>Проверьте, свободен ли ваш город для работы</p>
+
+          <form class="final-cta__form" data-form data-form-name="Проверка доступности города">
+            <label>
+              <span>Ваш город</span>
+              <input name="city" type="text" placeholder="Город" autocomplete="address-level2" required>
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" inputmode="numeric" autocomplete="tel" maxlength="18" required>
+            </label>
+            <button class="button" type="submit">Проверить город</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <img class="final-cta__man" src="assets/figma-third-man.png" alt="" aria-hidden="true">
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__content container">
+      <div class="site-footer__identity">
+        <strong>ЕКМ</strong>
+        <span>© 2026</span>
+      </div>
+      <div class="site-footer__legal">
+        <p>Индивидуальный предприниматель Кутова Елена Леонидовна</p>
+        <p>ОГРНИП 325665800240582</p>
+      </div>
+      <div class="site-footer__links">
+        <button type="button" data-open-legal="consent">Согласие на обработку персональных данных</button>
+        <button type="button" data-open-legal="privacy">Политика конфиденциальности</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="partnership-modal" data-partnership-modal aria-hidden="true">
+    <div class="partnership-modal__backdrop" data-close-partnership></div>
+    <div class="partnership-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="partnership-modal-title">
+      <button class="partnership-modal__close" type="button" aria-label="Закрыть форму" data-close-partnership>×</button>
+      <p class="partnership-modal__eyebrow">Получить материалы</p>
+      <h2 id="partnership-modal-title">Условия партнёрства</h2>
+      <p class="partnership-modal__package">Выбранный пакет: <strong data-selected-package>Средний город</strong></p>
+      <form class="partnership-modal__form" data-partnership-form data-form-name="Условия партнёрства">
+        <input type="hidden" name="package" data-package-input value="Средний город">
+        <label>
+          <span>Ваше имя</span>
+          <input name="name" type="text" placeholder="Ваше имя" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Телефон</span>
+          <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" inputmode="numeric" autocomplete="tel" maxlength="18" required>
+        </label>
+        <button class="button" type="submit">Отправить заявку</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="legal-modal" data-legal-modal="consent" aria-hidden="true">
+    <div class="legal-modal__backdrop" data-close-legal></div>
+    <div class="legal-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="legal-consent-title" tabindex="-1">
+      <button class="legal-modal__close" type="button" aria-label="Закрыть документ" data-close-legal>×</button>
+      <p class="legal-modal__eyebrow">Документ</p>
+      <h2 id="legal-consent-title">Согласие на обработку персональных данных</h2>
+      <div class="legal-modal__body">
+        <p>Настоящим я, являясь субъектом персональных данных, свободно, своей волей и в своём интересе предоставляю Индивидуальному предпринимателю Кутовой Елене Леонидовне, ОГРНИП 325665800240582 (далее — Оператор), согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+
+        <h3>1. Цели обработки</h3>
+        <ul>
+          <li>идентификация пользователя и обработка его обращения;</li>
+          <li>установление и поддержание связи;</li>
+          <li>предоставление информации о франшизе, товарах и услугах ЕКМ;</li>
+          <li>подготовка предложений с учётом запроса пользователя;</li>
+          <li>заключение и исполнение договоров;</li>
+          <li>проведение обезличенной аналитики работы сайта.</li>
+        </ul>
+
+        <h3>2. Персональные данные</h3>
+        <p>Согласие распространяется на данные, которые я самостоятельно передаю через формы сайта: имя, фамилию и отчество при их указании, номер телефона, адрес электронной почты, город, комментарий и иные сведения, содержащиеся в обращении.</p>
+
+        <h3>3. Действия с персональными данными</h3>
+        <p>Оператор вправе осуществлять сбор, запись, систематизацию, накопление, хранение, уточнение, извлечение, использование, предоставление доступа в предусмотренных законом случаях, обезличивание, блокирование, удаление и уничтожение персональных данных.</p>
+
+        <h3>4. Способы обработки</h3>
+        <p>Обработка может проводиться с применением средств автоматизации или без их применения. Обработка и хранение осуществляются на территории Российской Федерации с соблюдением требований законодательства.</p>
+
+        <h3>5. Срок действия и отзыв</h3>
+        <p>Согласие действует с момента его предоставления до достижения целей обработки либо до его отзыва. Отозвать согласие можно письменным обращением к Оператору по контактным данным, опубликованным на сайте. После получения отзыва обработка прекращается в сроки, установленные законодательством, кроме случаев, когда её продолжение допускается законом.</p>
+
+        <h3>6. Данные о работе с сайтом</h3>
+        <p>Я соглашаюсь с обработкой обезличенных технических данных о посещении сайта и использованием файлов cookie для обеспечения работы сайта, анализа пользовательских действий и улучшения качества сервиса.</p>
+
+        <h3>7. Подтверждение</h3>
+        <p>Я подтверждаю, что ознакомлен(а) с положениями Федерального закона № 152-ФЗ, понимаю свои права и последствия предоставления согласия, действую добровольно и подтверждаю свою дееспособность.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-modal" data-legal-modal="privacy" aria-hidden="true">
+    <div class="legal-modal__backdrop" data-close-legal></div>
+    <div class="legal-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="legal-privacy-title" tabindex="-1">
+      <button class="legal-modal__close" type="button" aria-label="Закрыть документ" data-close-legal>×</button>
+      <p class="legal-modal__eyebrow">Документ</p>
+      <h2 id="legal-privacy-title">Политика конфиденциальности</h2>
+      <div class="legal-modal__body">
+        <h3>1. Общие положения</h3>
+        <p>Настоящая Политика определяет порядок обработки персональных данных посетителей сайта и меры по их защите. Оператором персональных данных является Индивидуальный предприниматель Кутова Елена Леонидовна, ОГРНИП 325665800240582.</p>
+        <p>Оператор считает приоритетом соблюдение прав и свобод человека при обработке персональных данных, включая защиту частной жизни и конфиденциальность предоставленной информации.</p>
+
+        <h3>2. Основные понятия</h3>
+        <p>Персональные данные — сведения, относящиеся к прямо или косвенно определённому пользователю. Обработка персональных данных — любое действие с такими сведениями, включая их сбор, хранение, изменение, использование, блокирование, удаление и уничтожение.</p>
+
+        <h3>3. Обрабатываемые данные</h3>
+        <ul>
+          <li>имя, фамилия и отчество при их указании;</li>
+          <li>номер телефона;</li>
+          <li>адрес электронной почты;</li>
+          <li>город и содержание обращения;</li>
+          <li>обезличенные технические данные, включая cookie, сведения о браузере, устройстве и действиях на сайте.</li>
+        </ul>
+
+        <h3>4. Цели обработки</h3>
+        <ul>
+          <li>обработка заявок и обратная связь с пользователем;</li>
+          <li>предоставление информации о франшизе ЕКМ;</li>
+          <li>заключение и исполнение договоров;</li>
+          <li>уточнение деталей обращения и подготовка предложений;</li>
+          <li>улучшение работы сайта и проведение обезличенной аналитики.</li>
+        </ul>
+
+        <h3>5. Правовые основания</h3>
+        <p>Оператор обрабатывает данные на основании согласия пользователя, требований законодательства, а также при необходимости заключения и исполнения договора. Отправляя форму на сайте, пользователь подтверждает ознакомление с настоящей Политикой и предоставляет необходимые согласия.</p>
+
+        <h3>6. Порядок и безопасность обработки</h3>
+        <p>Оператор принимает правовые, организационные и технические меры для защиты данных от неправомерного доступа, изменения, раскрытия или уничтожения. Доступ к данным предоставляется только лицам, которым он необходим для выполнения служебных обязанностей или исполнения требований закона.</p>
+        <p>Персональные данные не передаются третьим лицам, кроме случаев, предусмотренных законодательством, либо когда такая передача необходима для исполнения договора и осуществляется с соблюдением требований о конфиденциальности.</p>
+
+        <h3>7. Хранение и удаление</h3>
+        <p>Данные обрабатываются не дольше, чем этого требуют цели обработки или законодательство. Пользователь вправе запросить уточнение, блокирование или удаление данных, а также отозвать согласие, направив обращение Оператору по контактным данным, опубликованным на сайте.</p>
+
+        <h3>8. Файлы cookie</h3>
+        <p>Сайт может использовать cookie и сервисы веб-аналитики. Пользователь может ограничить их использование в настройках браузера, однако это способно повлиять на работу отдельных функций сайта.</p>
+
+        <h3>9. Заключительные положения</h3>
+        <p>Политика действует бессрочно до публикации новой редакции. Оператор вправе обновлять документ при изменении законодательства или процессов обработки данных. Актуальная редакция размещается на сайте в свободном доступе.</p>
+      </div>
+    </div>
+  </div>
 
   <div class="toast" role="status" aria-live="polite">Спасибо! Мы скоро свяжемся с вами.</div>
   <script src="script.js"></script>
